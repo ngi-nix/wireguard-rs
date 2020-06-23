@@ -1,63 +1,43 @@
 {
   "nodes": {
-    "gnulib-src": {
-      "flake": false,
-      "info": {
-        "lastModified": 1588070119,
-        "narHash": "sha256-gMIWbMSKisS5w6QxKFfN1IJHPHxZw9h5upzxpada+1c=",
-        "revCount": 20684
-      },
-      "locked": {
-        "ref": "master",
-        "rev": "5ec4d920e4acb45225320c3df9ae32fdff928413",
-        "type": "git",
-        "url": "https://git.savannah.gnu.org/git/gnulib.git"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://git.savannah.gnu.org/git/gnulib.git"
-      }
-    },
-    "hello-src": {
-      "flake": false,
-      "info": {
-        "lastModified": 1549746003,
-        "narHash": "sha256-7losVbaLgy9pjL6GoOrZAK6O6nCXm3pddo03UZDjxUc=",
-        "revCount": 454
-      },
-      "locked": {
-        "ref": "master",
-        "rev": "0cce403f478bd0a4a60d0b8566c67d3a72498008",
-        "type": "git",
-        "url": "https://git.savannah.gnu.org/git/hello.git"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://git.savannah.gnu.org/git/hello.git"
-      }
-    },
     "nixpkgs": {
       "info": {
-        "lastModified": 1588027483,
-        "narHash": "sha256-DcNFRegA72g1fmVWp+kFxxD4JuAwwM7XjYy0ebRa56U="
+        "lastModified": 1592579076,
+        "narHash": "sha256-d6HhCILZb2w0BeyHWqasd6H8PP4Q8cuJqf3fVdOpREU="
       },
       "locked": {
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "2faa76db27c4a8045d050d9b390dbb2249b0f3c0",
+        "rev": "ac8f8bd752378043e1dc702442011587cf6ab4f2",
         "type": "github"
       },
       "original": {
         "id": "nixpkgs",
-        "ref": "nixos-20.03",
         "type": "indirect"
       }
     },
     "root": {
       "inputs": {
-        "gnulib-src": "gnulib-src",
-        "hello-src": "hello-src",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "wireguard-rs": "wireguard-rs"
+      }
+    },
+    "wireguard-rs": {
+      "flake": false,
+      "info": {
+        "lastModified": 1592164655,
+        "narHash": "sha256-dcTsyXFg/qGqcru/RtuRqDfHUeDWO/e4bGVn84/h9CI=",
+        "revCount": 163
+      },
+      "locked": {
+        "ref": "master",
+        "rev": "c1dfc848c48978603fe801737a07b16cb0a9c1a3",
+        "type": "git",
+        "url": "https://git.zx2c4.com/wireguard-rs"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.zx2c4.com/wireguard-rs"
       }
     }
   },
