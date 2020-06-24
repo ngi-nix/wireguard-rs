@@ -76,14 +76,16 @@
           stdenv.mkDerivation {
             name = "wireguard-rs-test-${version}";
 
-            buildInputs = [ wireguard-rs ];
+            buildInputs = [ wireguard-rs wireguard-tools ]; # wg command for doing tests
 
             unpackPhase = "true";
 
             buildPhase = ''
               echo 'running some integration tests'
               ./bin/wireguard-rs
-            ''; # this should return with "Error: no device name suppoed"
+              ./binwireguard-rs wg0
+              wg show
+            '';
 
             installPhase = "mkdir -p $out";
           };
